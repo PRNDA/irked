@@ -10,4 +10,6 @@ import java.lang.annotation.Target;
 @Target({FIELD, METHOD})
 public @interface OnFail {
 
+	Class<?>[] exceptions() default {};
+
 }
